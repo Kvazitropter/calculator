@@ -1,10 +1,4 @@
-import math from "../node_modules/mathjs";
-
 const outputWindow = document.querySelector("output");
-
-document.addEventListener("keydown", (event) => {
-  if (event.key.match(/0-9%\/*\-+\(\)=]|Enter/)) calc(event.key);
-});
 
 const calculate = (value) => {
   if (value.match(/=|Enter/)) {
@@ -19,16 +13,21 @@ const calculate = (value) => {
       }, 2000);
     }
   } else if (value.match(/c/)) {
-    outputWindow.textContent = "";
-  } else if (value.match(/&#9668;|BackSpace/)) {
-    output.textContent = output.textContent.substring(
+    outputWindow.textContent = "0";
+  } else if (value.match(/oneC/)) {
+    const substr = outputWindow.textContent.slice(
       0,
-      output.textContent.length - 1
+      outputWindow.textContent.length - 1
     );
+    outputWindow.textContent = substr;
   } else {
     outputWindow.textContent = `${outputWindow.textContent}${value}`;
   }
 };
+
+document.addEventListener("keydown", (event) => {
+  if (event.key.match(/0-9%\/*\-+\(\)=]|Enter/)) calculate(event.key);
+});
 
 const buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {

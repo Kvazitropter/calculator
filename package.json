@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "mathjs": "^11.3.0",
-    "webpack": "^5.74.0"
-  }
-}
