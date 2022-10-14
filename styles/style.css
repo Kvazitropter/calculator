@@ -16,7 +16,7 @@ body {
   color: black;
 }
 
-.calculator {
+.container {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -25,40 +25,36 @@ body {
   background-color: blueviolet;
 }
 
-.container {
+.calculator {
+  max-height: 90%;
   height: 600px;
+  max-width: 60%;
   width: 400px;
   display: flex;
   flex-direction: column;
   background-color: black;
 }
 
-.input_window {
+.output_window {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 2;
   padding: 20px;
   background-color: black;
 }
 
-.input {
+output {
   height: 100%;
   width: 100%;
-  background-color: #f0f0f0;
-}
-
-.input input {
-  display: none;
-  height: 100%;
-  width: 100%;
-  background-color: #f0f0f0;
+  box-sizing: border-box;
+  background-color: yellow;
 }
 
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 2;
+  flex-grow: 3;
   justify-content: space-evenly;
   gap: 10px;
   padding: 0px 20px 20px 20px;
@@ -68,19 +64,15 @@ body {
 .btn {
   width: calc(25% - 10px);
   height: calc(20% - 10px);
+  border: 1px solid #f0f0f0;
+}
+
+.bl {
   background-color: black;
 }
 
-.btn:hover {
+.bl:hover {
   background-color: #1e1e1e;
-}
-
-.clearAll {
-  background-color: #ff8f2a;
-}
-
-.clearAll:hover {
-  background-color: #ff8010;
 }
 
 .wh-or {
@@ -91,12 +83,20 @@ body {
   background-color: #e2e2e2;
 }
 
-.buttons .wh-or p {
-  color: #ff8f2a;
+.clearAll {
+  background-color: #ff8f2a;
+}
+
+.clearAll:hover {
+  background-color: #ff8010;
 }
 
 .buttons p {
   display: inline;
   font-size: 25px;
   color: #f0f0f0;
+}
+
+.buttons .wh-or p {
+  color: #ff8f2a;
 }
