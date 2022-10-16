@@ -12,7 +12,6 @@
 
 body {
   font-family: BitterPro, sans-serif;
-  font-size: 40px;
   color: black;
 }
 
@@ -36,25 +35,24 @@ body {
 }
 
 .output_window {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 2;
-  padding: 20px;
+  flex: 2 150px;
+  margin: 20px;
   background-color: black;
 }
 
 output {
+  font-size: 40px;
+  word-wrap: break-word;
+  display: block;
   height: 100%;
   width: 100%;
-  box-sizing: border-box;
-  background-color: yellow;
+  background-color: #f0f0f0;
 }
 
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 3;
+  flex: 3 450px;
   justify-content: space-evenly;
   gap: 10px;
   padding: 0px 20px 20px 20px;

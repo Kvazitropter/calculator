@@ -1,7 +1,7 @@
 const outputWindow = document.querySelector("output");
 
 const calculate = (value) => {
-  if (value.match(/=|Enter/)) {
+  if (value.match(/=/)) {
     try {
       outputWindow.textContent = math.evaluate(outputWindow.textContent);
     } catch {
@@ -21,6 +21,9 @@ const calculate = (value) => {
     );
     outputWindow.textContent = substr;
   } else {
+    if (outputWindow.textContent === "0" && value !== ".") {
+      outputWindow.textContent = "";
+    }
     outputWindow.textContent = `${outputWindow.textContent}${value}`;
   }
 };
