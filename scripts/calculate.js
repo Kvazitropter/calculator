@@ -1,13 +1,13 @@
 const outputWindow = document.querySelector("output");
 
 const calculate = (value) => {
+  const expression = outputWindow.textContent;
+  const [warning1, warning2] = ["Invalid expression", "Expression is too long"];
   if (value.match(/=/)) {
     try {
       outputWindow.textContent = math.evaluate(outputWindow.textContent);
     } catch {
-      const expression = outputWindow.textContent;
-      const warning = "Unvalid expression";
-      outputWindow.textContent = warning;
+      outputWindow.textContent = warning1;
       setTimeout(() => {
         outputWindow.textContent = expression;
       }, 2000);
@@ -19,18 +19,22 @@ const calculate = (value) => {
       0,
       outputWindow.textContent.length - 1
     );
-    outputWindow.textContent = substr;
+    outputWindow.textContent = substr || "0";
+  } else if (outputWindow.textContent.length === 111) {
+    outputWindow.textContent = warning2;
+    setTimeout(() => {
+      outputWindow.textContent = expression;
+    }, 2000);
   } else {
-    if (outputWindow.textContent === "0" && value !== ".") {
+    if (
+      outputWindow.textContent === "0" &&
+      value.match(/\+|-|\.|\*|\//) === null
+    ) {
       outputWindow.textContent = "";
     }
     outputWindow.textContent = `${outputWindow.textContent}${value}`;
   }
 };
-
-document.addEventListener("keydown", (event) => {
-  if (event.key.match(/0-9%\/*\-+\(\)=]|Enter/)) calculate(event.key);
-});
 
 const buttons = document.querySelectorAll(".btn");
 buttons.forEach((button) => {
