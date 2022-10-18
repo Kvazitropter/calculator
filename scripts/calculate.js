@@ -2,12 +2,12 @@ const outputWindow = document.querySelector("output");
 
 const calculate = (value) => {
   const expression = outputWindow.textContent;
-  const [warning1, warning2] = ["Invalid expression", "Expression is too long"];
+  const warning = "Invalid expression";
   if (value.match(/=/)) {
     try {
       outputWindow.textContent = math.evaluate(outputWindow.textContent);
     } catch {
-      outputWindow.textContent = warning1;
+      outputWindow.textContent = warning;
       setTimeout(() => {
         outputWindow.textContent = expression;
       }, 2000);
@@ -20,11 +20,6 @@ const calculate = (value) => {
       outputWindow.textContent.length - 1
     );
     outputWindow.textContent = substr || "0";
-  } else if (outputWindow.textContent.length === 111) {
-    outputWindow.textContent = warning2;
-    setTimeout(() => {
-      outputWindow.textContent = expression;
-    }, 2000);
   } else {
     if (
       outputWindow.textContent === "0" &&
