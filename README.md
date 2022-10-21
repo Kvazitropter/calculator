@@ -2,7 +2,7 @@
 # Calculator
 ---
 
-![Screenshot](../images/calcScreenshot.png)
+![Screenshot](./images/calcScreenshot.png)
 
 ---
 
