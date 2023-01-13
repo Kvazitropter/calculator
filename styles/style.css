@@ -3,6 +3,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-size: 25px;
+  font-weight: bold;
   color: black;
   background-color: blueviolet;
 }
@@ -27,15 +28,15 @@ body {
   width: calc(70vh / 3 * 2);
   display: flex;
   flex-direction: column;
-}
-
-.output-window {
-  flex: 1 150px;
-  position: relative;
   background-color: black;
 }
 
-output {
+.window-container {
+  flex: 1 150px;
+  position: relative;
+}
+
+.calc-window {
   line-height: 1;
   word-wrap: break-word;
   overflow-y: scroll;
@@ -47,14 +48,13 @@ output {
   background-color: #f0f0f0;
 }
 
-.buttons {
+.buttons-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
   flex: 3 450px;
   padding: 0px 20px 20px 20px;
-  background-color: black;
 }
 
 .btn {
@@ -86,11 +86,11 @@ output {
   background-color: #e2e2e2;
 }
 
-.clearAll {
+[data-btn-role="reset"] {
   color: #f0f0f0;
   background-color: #ff8f2a;
 }
 
-.clearAll:hover {
+[data-btn-role="reset"]:hover {
   background-color: #ff8010;
 }

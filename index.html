@@ -3,41 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css"/>
     <title>Calculator</title>
   </head>
   <body>
     <div class="container">
       <div class="calculator">
-        <div class="output-window">
-          <output>0</output>
+        <div class="window-container">
+          <div class="calc-window">0</div>
         </div>
-        <div class="buttons">
-          <button class="btn clearAll" value="c">c</button>
-          <button class="btn wh-or" value="(">(</button>
-          <button class="btn wh-or" value=")">)</button>
-          <button class="btn wh-or" value="oneC">&#9668;</button>
-          <button class="btn bl" value="7">7</button>
-          <button class="btn bl" value="8">8</button>
-          <button class="btn bl" value="9">9</button>
-          <button class="btn wh-or" value="/">&div;</button>
-          <button class="btn bl" value="4">4</button>
-          <button class="btn bl" value="5">5</button>
-          <button class="btn bl" value="6">6</button>
-          <button class="btn wh-or" value="*">&times;</dbutton>
-          <button class="btn bl" value="1">1</button>
-          <button class="btn bl" value="2">2</button>
-          <button class="btn bl" value="3">3</button>
-          <button class="btn wh-or" value="-">-</button>
-          <button class="btn bl" value="0">0</button>
-          <button class="btn wh-or" value="=">=</button>
-          <button class="btn wh-or" value=".">.</button>
-          <button class="btn wh-or" value="+">+</button>
+        <div class="buttons-container">
+          <button class="btn" data-btn-role="reset">c</button>
+          <button class="btn wh-or" data-btn-role="symb" value="(">(</button>
+          <button class="btn wh-or" data-btn-role="symb" value=")">)</button>
+          <button class="btn wh-or" data-btn-role="clear-one">&#9668;</button>
+          <button class="btn bl" data-btn-role="symb" value="7">7</button>
+          <button class="btn bl" data-btn-role="symb" value="8">8</button>
+          <button class="btn bl" data-btn-role="symb" value="9">9</button>
+          <button class="btn wh-or" data-btn-role="symb" value="/">&div;</button>
+          <button class="btn bl" data-btn-role="symb" value="4">4</button>
+          <button class="btn bl" data-btn-role="symb" value="5">5</button>
+          <button class="btn bl" data-btn-role="symb" value="6">6</button>
+          <button class="btn wh-or" data-btn-role="symb" value="*">&times;</dbutton>
+          <button class="btn bl" data-btn-role="symb" value="1">1</button>
+          <button class="btn bl" data-btn-role="symb" value="2">2</button>
+          <button class="btn bl" data-btn-role="symb" value="3">3</button>
+          <button class="btn wh-or" data-btn-role="symb" value="-">-</button>
+          <button class="btn bl" data-btn-role="symb" value="0">0</button>
+          <button class="btn wh-or" data-btn-role="calculate">=</button>
+          <button class="btn wh-or" data-btn-role="symb" value=".">.</button>
+          <button class="btn wh-or" data-btn-role="symb" value="+">+</button>
         </div>
       </div>
     </div>
   </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/6.6.4/math.js"></script>
-  <script src="./scripts/calculate.js"></script>
-  <script src="./scripts/setOutputFontSize.js"></script>
 </html>

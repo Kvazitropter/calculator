@@ -1,0 +1,41 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "web-calculator",
+  "main": "src/runApp.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kvazitropter/calculator.git"
+  },
+  "author": "Kvazitropter (Kachulina Tatyana)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kvazitropter/calculator/issues"
+  },
+  "homepage": "https://github.com/Kvazitropter/calculator#readme",
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel": "^6.23.0",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^6.7.3",
+    "eslint": "^8.31.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "^2.27.4",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "i18next": "^22.4.9",
+    "mathjs": "^11.5.0",
+    "on-change": "^4.0.2"
+  }
+}
