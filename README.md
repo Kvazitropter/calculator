@@ -7,6 +7,6 @@
 
 ![Preview](./images/calcScreenshot.png)
 
-[![Click to try](https://img.shields.io/badge/-click%20to%20try-%23ff8f2a?style=for-the-badge)](https://kvazitropter.github.io/calculator/)
+[![Click to try](https://img.shields.io/badge/-click%20to%20try-%23ff8f2a?style=for-the-badge)](https://web-calculator-psl9rsuhn-kvazitropter.vercel.app/)
 
 ----------------------------------------------------------------------------------------------
