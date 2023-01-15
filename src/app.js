@@ -98,6 +98,8 @@ export default () => {
     }
   });
 
+  resizeWindowFont();
+
   window.addEventListener('resize', () => {
     resizeWindowFont();
   });
