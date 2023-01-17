@@ -5,7 +5,7 @@
 
 ----------------------------------------------------------------------------------------------
 
-![Preview](./images/calcScreenshot.png)
+[![Preview](./images/calcScreenshot.png)](https://web-calculator-psl9rsuhn-kvazitropter.vercel.app/)
 
 [![Click to try](https://img.shields.io/badge/-click%20to%20try-%23ff8f2a?style=for-the-badge)](https://web-calculator-psl9rsuhn-kvazitropter.vercel.app/)
 
